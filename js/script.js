@@ -1,5 +1,5 @@
 function allClear(bilangan) {
-
+    bilangan.value = 0;
 }
 
 function addNumber(input, number) {
