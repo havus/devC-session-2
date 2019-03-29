@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'digital-7regular';
+    src: url('digital-7-webfont.woff2') format('woff2'),
+        url('digital-7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
+    font-family: 'digital-7regular';
     background-image: url(../assets/glow-gb.jpg);
     background-size: cover;
     /* background-position: 0 -100px; */
@@ -15,6 +24,8 @@ body {
     position: absolute;
     width: 300px;
     padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 input[type="text"]:disabled {
@@ -29,9 +40,6 @@ input[type="text"]:disabled {
 }
 
 .tombol {
-    /* background-image: linear-gradient(to bottom right,
-        rgba(10, 37, 64, .9),
-        rgba(2, 18, 39, .9)); */
     background-image: linear-gradient(to bottom right,
         rgba(9, 0, 53, .85) 25%,
         rgba(61, 58, 206, .85) 150%);
@@ -53,19 +61,4 @@ input[type="text"]:disabled {
 .cus-btn {
     padding-top: 60px;
     height: 160px;
-}
-
-table {
-    margin: 0 !important;
-    border: none !important;
-}
-
-td {
-    padding: 0 !important;
-}
-
-tr {
-    padding: 0 !important;
-    max-height: 80px !important;
-    height: 80px !important;
 }
