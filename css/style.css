@@ -29,7 +29,12 @@ input[type="text"]:disabled {
 }
 
 .tombol {
-    background-color: black;
+    /* background-image: linear-gradient(to bottom, */
+    /* rgba(51, 8, 103, 0.796), */
+    /* rgba(48, 208, 208, 0.644)); */
+    background-image: radial-gradient(circle farthest-corner at 16.5% 37.3%,
+        rgba(10, 37, 64, .9) 0.1%,
+        rgba(2, 18, 39, .9) 90%);
 }
 
 .btn {
@@ -42,7 +47,7 @@ input[type="text"]:disabled {
 }
 
 .cus-btn {
-    padding-top: 25px;
+    padding-top: 60px;
     height: 160px;
 }
 
