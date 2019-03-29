@@ -1,39 +1,42 @@
-var master = [];
+var angka = document.getElementsByName('display')[0];
 
-var result = parseInt(document.getElementsByName('display')[0].value);
+var addChar = function (number) {
+    if (angka.value.length == 0 || angka.value == 0) {
+        angka.value = number;
+    } else {
+        angka.value += number;
+    }
+}
+
+var addDoubleNull = function (number) {
+    if (angka.value.length == 0 || angka.value == 0) {
+        angka.value = 0;
+    } else {
+        angka.value += number;
+    }
+}
 
 var allClear = function (bilangan) {
     bilangan.value = 0;
 }
 
-var addNumber = function (number) {
-    var angka = document.getElementsByName('display')[0];
-    if (angka.value.length == 0 || angka.value == 0) {
-        angka.value = number;
-        console.log('kosong')
-    } else {
-        angka.value += number;
-        console.log('tdk kosong');
-    }
+var hitung = function () {
+    angka.value = eval(angka.value);
 }
 
-// var plusNumber = function (input) {
-//     if (parseInt(input.value.length) === 0 || parseInt(input.value) === 0) {
-//         // console.log('kosong');
-//         // result = 0;
-//         console.log('kosong');
+var delChar = function () {
+    var result = angka.value.slice(0, -1);
+    angka.value = result;
+}
+
+// var namaFungsi = (data1, data2) =>
+//     console.log(data1 + data2);
+
+// namaFungsi(1, 9);
+
+// var addDoubleNull = (number) =>
+//     if (angka.value.length == 0 || angka.value == 0) {
+//         angka.value = 0;
 //     } else {
-//         var bawah = document.getElementsByName('result')[0];
-//         bawah.value = bawah.value + parseInt(input.value) + '+';
-//         // input.value = parseInt(input) + '+';
-//         console.log('tidak kosong');
-//         // return input;
-//     }
-// }
-
-// var hasil = "1 + 1";
-
-// console.log(eval(hasil);
-// console.log(display);
-
-// console.log(document.getElementsByName('result')[0].value)
+//         angka.value += number;
+//     };

@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../assets/glow-gb.jpg);
+    background-size: cover;
+    /* background-position: 0 -100px; */
+}
+
+.main {
+    top: 150px;
+    left: 200px;
+    position: absolute;
+    width: 310px;
+    padding: 0;
+}
+
+input[type="text"]:disabled {
+    text-align: right;
+    padding: 15px;
+    background-color: #000510;
+    color: rgba(0, 255, 255, 0.8);
+    width: 100%;
+    font-size: 50px;
+    height: 90px;
+    border: none !important;
+}
+
+.tombol {
+    background-color: black;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 25px;
+    display: inline-block;
+    width: 60px;
+    height: 80px;
+    color: rgba(0, 255, 255, 0.8);
+}
+
+.cus-btn {
+    padding-top: 25px;
+    height: 160px;
+}
+
+table {
+    margin: 0 !important;
+    border: none !important;
+}
+
+td {
+    padding: 0 !important;
+}
+
+tr {
+    padding: 0 !important;
+    max-height: 80px !important;
+    height: 80px !important;
+}
