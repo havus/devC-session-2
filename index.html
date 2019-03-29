@@ -19,17 +19,24 @@
       </td>
     </tr>
     <tr>
+      <td colspan="5">
+        <form action="">
+          <input type="hidden" name="result" value="0">
+        </form>
+      </td>
+    </tr>
+    <tr>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 7 )">7</button>
+        <button onclick="addNumber(7);">7</button>
       </td>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 8 )">8</button>
+        <button onclick="addNumber(8);">8</button>
       </td>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 9 )">9</button>
+        <button onclick="addNumber(9);">9</button>
       </td>
       <td>
-        <button>+</button>
+        <button onclick="addNumber('+');">+</button>
       </td>
       <td>
         <button>-</button>
@@ -37,13 +44,13 @@
     </tr>
     <tr>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 4 )">4</button>
+        <button onclick="addNumber(4);">4</button>
       </td>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 5 )">5</button>
+        <button onclick="addNumber(5);">5</button>
       </td>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 6 )">6</button>
+        <button onclick="addNumber(6);">6</button>
       </td>
       <td>
         <button>x</button>
@@ -54,13 +61,13 @@
     </tr>
     <tr>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 1 )">1</button>
+        <button onclick="addNumber(1);">1</button>
       </td>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 2 )">2</button>
+        <button onclick="addNumber(2);">2</button>
       </td>
       <td>
-        <button onclick="addNumber(document.getElementsByName('display')[0] , 3 )">3</button>
+        <button onclick="addNumber(3);">3</button>
       </td>
       <td>
         <button>%</button>
@@ -71,15 +78,15 @@
     </tr>
     <tr>
       <td>
-        <button onclick="allClear(document.getElementsByName('display')[0])">AC</button>
+        <button onclick="allClear(document.getElementsByName('display')[0]);">AC</button>
       </td>
       <td>
-        <button>0</button>
+        <button onclick="addNumber(0);">0</button>
       </td>
     </tr>
   </table>
 
-  <script src="js/script.js"></script>
+  <script src=" js/script.js"> </script>
 </body>
 
 </html>
