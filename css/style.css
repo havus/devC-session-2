@@ -15,8 +15,6 @@ body {
     font-family: 'digital-7regular';
     background-image: url(../assets/glow-gb.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: 0 -100px; */
 }
 
 .main {
