@@ -23,13 +23,11 @@ var hitung = function () {
         for (i = 0; i < bulat.length; i++) {
             if (bulat[i] == '.') {
                 if (bulat[i + 2] == 0) {
-                    // console.log('nemu');
-                    angka.value = bulat.slice(0, -3);
-                    if (bulat[i] + 1 == 0) {
-                        angka.value = bulat.slice(0, -1);
+                    if (bulat[i + 1] == 0) {
+                        angka.value = bulat.slice(0, -3)
+                    } else {
+                        angka.value = bulat.slice(0, -1)
                     }
-                } else {
-                    angka.value = bulat;
                 }
             }
         }
@@ -40,10 +38,3 @@ var delChar = function () {
     var result = angka.value.slice(0, -1);
     angka.value = result;
 };
-
-
-// elseif(bulat[i + 1] == 0) {
-//     angka.value = bulat.slice(0, -1);
-// } else(
-//     console.log('');
-// )
