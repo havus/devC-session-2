@@ -6,13 +6,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'digital-7_italicitalic';
+    src: url('digital-7_italic-webfont.woff2') format('woff2'),
+        url('digital-7_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    font-family: 'digital-7regular';
     background-image: url(../assets/glow-gb.jpg);
     background-size: cover;
 }
@@ -28,6 +35,7 @@ body {
 }
 
 input[type="text"]:disabled {
+    font-family: 'digital-7_italicitalic';
     text-align: right;
     padding: 15px;
     background-color: #000510;
@@ -39,6 +47,7 @@ input[type="text"]:disabled {
 }
 
 .tombol {
+    font-family: 'digital-7regular';
     background-image: linear-gradient(to bottom right,
         rgba(9, 0, 53, .85) 25%,
         rgba(61, 58, 206, .85) 150%);

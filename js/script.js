@@ -33,3 +33,5 @@ var delChar = function () {
     var result = angka.value.slice(0, -1);
     angka.value = result;
 };
+
+// issue : pembulatan decimal overload;
