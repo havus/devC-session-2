@@ -25,7 +25,8 @@ var hitung = function () {
     if (angka.value.length == 0 || angka.value == 0) {
         angka.value = 0;
     } else {
-        angka.value = eval(angka.value);
+        // issue : pembulatan decimal overload; (.toFixed) -- FIX --
+        angka.value = eval(angka.value).toFixed(2);
     }
 };
 
@@ -33,5 +34,3 @@ var delChar = function () {
     var result = angka.value.slice(0, -1);
     angka.value = result;
 };
-
-// issue : pembulatan decimal overload;
