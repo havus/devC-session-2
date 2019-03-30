@@ -23,7 +23,7 @@ var hitung = function () {
         for (i = 0; i < bulat.length; i++) {
             if (bulat[i] == '.') {
                 if (bulat[i + 2] == 0) {
-                    console.log('nemu');
+                    // console.log('nemu');
                     angka.value = bulat.slice(0, -3);
                     if (bulat[i] + 1 == 0) {
                         angka.value = bulat.slice(0, -1);
