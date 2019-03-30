@@ -18,16 +18,32 @@ var hitung = function () {
         angka.value = 0;
     } else {
         // issue : pembulatan decimal overload; (.toFixed) -- FIX --
-        angka.value = eval(angka.value).toFixed(2);
+        var bulat = eval(angka.value).toFixed(2);
+        console.log(bulat);
+        for (i = 0; i < bulat.length; i++) {
+            if (bulat[i] == '.') {
+                if (bulat[i + 2] == 0) {
+                    console.log('nemu');
+                    angka.value = bulat.slice(0, -3);
+                    if (bulat[i] + 1 == 0) {
+                        angka.value = bulat.slice(0, -1);
+                    }
+                } else {
+                    angka.value = bulat;
+                }
+            }
+        }
     }
 };
-
-// angka.value = 'aku';
-var coba = "" + 123;
-var digits = coba.split("");
-// console.log(digits);
 
 var delChar = function () {
     var result = angka.value.slice(0, -1);
     angka.value = result;
 };
+
+
+// elseif(bulat[i + 1] == 0) {
+//     angka.value = bulat.slice(0, -1);
+// } else(
+//     console.log('');
+// )
