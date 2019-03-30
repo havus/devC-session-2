@@ -19,7 +19,7 @@ var hitung = function () {
     } else {
         // issue : pembulatan decimal overload; (.toFixed) -- FIX --
         var bulat = eval(angka.value).toFixed(2);
-        console.log(bulat);
+        // console.log(bulat);
         for (i = 0; i < bulat.length; i++) {
             if (bulat[i] == '.') {
                 if (bulat[i + 2] == 0) {
@@ -28,6 +28,8 @@ var hitung = function () {
                     } else {
                         angka.value = bulat.slice(0, -1)
                     }
+                } else {
+                    angka.value = bulat;
                 }
             }
         }
