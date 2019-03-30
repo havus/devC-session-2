@@ -8,16 +8,8 @@ var addChar = function (number) {
     }
 };
 
-var addDoubleNull = function (number) {
-    if (angka.value.length == 0 || angka.value == 0) {
-        angka.value = 0;
-    } else {
-        angka.value += number;
-    }
-};
-
-var allClear = function (bilangan) {
-    bilangan.value = 0;
+var allDel = function () {
+    angka.value = 0;
 };
 
 var hitung = function () {
@@ -29,6 +21,11 @@ var hitung = function () {
         angka.value = eval(angka.value).toFixed(2);
     }
 };
+
+// angka.value = 'aku';
+var coba = "" + 123;
+var digits = coba.split("");
+// console.log(digits);
 
 var delChar = function () {
     var result = angka.value.slice(0, -1);
